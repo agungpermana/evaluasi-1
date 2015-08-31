@@ -67,5 +67,25 @@ public class User {
         this.alamat = alamat;
     }
 
-    
+    @Override
+    public int hashCode() {
+        int hash = 3;
+        hash = 83 * hash + (this.nama != null ? this.nama.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final User other = (User) obj;
+        if ((this.nama == null) ? (other.nama != null) : !this.nama.equals(other.nama)) {
+            return false;
+        }
+        return true;
+    }
 }
