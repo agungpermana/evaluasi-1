@@ -12,18 +12,18 @@ import java.util.Date;
  */
 public class User {
     
-    String idUser;
+    Integer idUser;
     String nama;
     String gender;
     Date tglLahir;
     String noTelp;
     String alamat;
 
-    public String getIdUser() {
+    public Integer getIdUser() {
         return idUser;
     }
 
-    public void setIdUser(String idUser) {
+    public void setIdUser(Integer idUser) {
         this.idUser = idUser;
     }
 

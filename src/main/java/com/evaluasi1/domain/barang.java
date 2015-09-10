@@ -12,7 +12,7 @@ import java.math.BigDecimal;
  */
 public class barang {
     
-    String kodeBarang;
+    Integer kodeBarang;
     String namaBarang;
     Integer jumlahBarang;
     BigDecimal harga;
@@ -34,11 +34,11 @@ public class barang {
         this.harga = harga;
     }
 
-    public String getKodeBarang() {
+    public Integer getKodeBarang() {
         return kodeBarang;
     }
 
-    public void setKodeBarang(String kodeBarang) {
+    public void setKodeBarang(Integer kodeBarang) {
         this.kodeBarang = kodeBarang;
     }
 

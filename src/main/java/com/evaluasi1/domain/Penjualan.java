@@ -12,17 +12,19 @@ import java.math.BigDecimal;
  */
 public class Penjualan {
     
-    String noFaktur;
+    Integer noFaktur;
     String namaBarang;
     Integer jumlahBarang;
-    BigDecimal totalHarga;
+    private BigDecimal totalHarga;
+    public static int jumlahPenjualan = 0;
 
-    public String getNoFaktur() {
+    public Integer getNoFaktur() {
         return noFaktur;
     }
 
-    public void setNoFaktur(String noFaktur) {
-        this.noFaktur = noFaktur;
+    public void setNoFaktur(Integer noFaktur) {
+        this.jumlahPenjualan++;
+        this.noFaktur = this.jumlahPenjualan;
     }
 
     public String getNamaBarang() {
@@ -47,8 +49,7 @@ public class Penjualan {
 
     public void setTotalHarga(BigDecimal totalHarga) {
         this.totalHarga = totalHarga;
-    }
-    
+    }   
     
     
 }
